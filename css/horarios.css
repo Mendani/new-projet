@@ -1,0 +1,12 @@
+#horarios{
+    border: 1px solid;
+    width: 100%;
+    max-width: 30%;
+    text-align: center;
+    background-color: aliceblue;
+    position: fixed;
+    top: 260px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}

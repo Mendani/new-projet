@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/buscador.css">
     <link rel="stylesheet" href="css/lateral.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/horarios.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,17 +53,23 @@
                 <nav id="navBar" class="oculto">
                 <li><a href="">Inicio</a></li>
                 <li><a href="#">Tienda</a></li>
-                <li><a href="">Nosotros</a></li>
+                <li><a href="">Galeria</a></li>
                 <li><a href="">Servicios</a></li>
                 <li><a href="">Reservar Cita</a></li>
                 <li><a href="">Contacto</a></li>
+                <li><a href="#" onclick="mostrarHorarios()">Horarios</a></li>
                 </nav>
                 <i class="fa-solid fa-magnifying-glass" id="Search_btn" onclick="searchInput()"></i>
                 
             </header>
             <input type="search" placeholder="Buscar" id="search" class="oculto">
         </div>
-          
+          <div id="horarios" class="oculto">
+            <h4>Nuestros horarios de atencion</h4>
+                <p>Lunes a Viernes</p>
+                <p>16 => 20</p>
+            <span id="horas"></span>
+          </div>
         <div id="hero">
             <h3>Donde tu estilo florece.</h3>
             <span class="slogan">Cortes, estilo y actitud en un solo lugar.</span>
@@ -78,6 +85,7 @@
     </div>
 
     <!--script-->
+    <script src="js/horarios.js"></script>
     <script src="js/inter.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/loader.js"></script>
