@@ -1,0 +1,151 @@
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .9);
+
+    opacity: 1;
+    visibility: visible;
+    z-index: 900;
+
+    width: 100%;
+    height: 180px;
+
+    transition: 0.3s;
+}
+header{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 1000;
+
+    transition: 0.5s;
+}
+
+header img{
+    max-width: 10%;
+    height: auto;
+    position: fixed;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 6px white);
+}
+.oculto-scroll {
+     transform: translateY(-100%);
+      opacity: 0;
+       pointer-events: none; 
+    }
+.oculto{
+    display: none;
+}
+
+#carrito{
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+#carrito{ 
+    color: white;
+    font-size: 1.4rem;
+}
+
+.counter{
+    position:absolute ;
+    font-size: 15px;
+    font-weight: bold;
+    top: -10px;
+    left: 18px;
+    color: black;
+    background-color:chartreuse;
+    padding: 1.5px;
+    border-radius: 30px;
+}
+
+#nav_btn{
+    position: fixed;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: rgba(248, 229, 124, 0.678);
+}
+
+#navBar{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 22%;
+    background-color: black;
+
+    height: 180px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    z-index: 10000;
+}
+
+#navBar li{
+      text-align: center;
+      padding-right: 40px;
+      padding-bottom: 8px;
+     list-style: none;
+}
+
+#navBar  a{
+    cursor: pointer;
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+#navBar a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    background:linear-gradient(to right, #E5C158 50%, #CD7F32 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+
+}
+#navBar a:hover{
+    background-position: left bottom;
+}
+#navBar.oculto{
+    display: none;
+}
+
+#Search_btn{
+    position: absolute;
+    top: 78%;
+    color: #f8be01;;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.overlay1 {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0 , 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 0.3s ease;
+    z-index: 900;
+}
+
+.overlay1.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}

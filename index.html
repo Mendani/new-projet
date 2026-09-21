@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Icons-->
+    <link rel="icon" href="img/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/buscador.css">
+    <link rel="stylesheet" href="css/lateral.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Serif+Display:ital@0;1&family=Style+Script&family=Tapestry&display=swap" rel="stylesheet">
+    <!--otra-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Serif+Display:ital@0;1&family=Playwrite+CU+Guides&family=Style+Script&family=Tapestry&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Rose</title>
+</head>
+<body>
+    <div id="preloader" autoplay muted playsinline loop>
+        <video id="rosaLoader" autoplay loop muted playsinline > 
+            <source  src="videos/BlackRose.mp4" type="video/mp4">
+        </video>
+        <h2>Black Rose</h2>
+
+    </div>
+
+    <div id="contenido">
+
+        <section>
+            <div class="overlay" id="scroll">
+            <header id="scroll1">
+                <img src="img/logo.png" alt="">   
+                <i class="fa-solid fa-cart-shopping" id="carrito"> <span class="counter" id="cart_count">0</span></i>
+                
+
+
+             <i id="nav_btn" class="fa-solid fa-bars" onclick="mostrarNav()"></i>
+
+                <div id="overlay" class="overlay1"></div>
+                <nav id="navBar" class="oculto">
+                <li><a href="">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Reservar Cita</a></li>
+                <li><a href="">Contacto</a></li>
+                </nav>
+                <i class="fa-solid fa-magnifying-glass" id="Search_btn" onclick="searchInput()"></i>
+                
+            </header>
+            <input type="search" placeholder="Buscar" id="search" class="oculto">
+        </div>
+          
+        <div id="hero">
+            <h3>Donde tu estilo florece.</h3>
+            <span class="slogan">Cortes, estilo y actitud en un solo lugar.</span>
+        </div>
+        </section>
+
+        <section id="lateral">
+            <div class="back"></div>
+            <div id="interuno">
+                
+            </div>
+        </section>
+    </div>
+
+    <!--script-->
+    <script src="js/inter.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/toggleA.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/scroll.js"></script>
+
+</body>
+</html>

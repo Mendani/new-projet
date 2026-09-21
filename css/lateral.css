@@ -1,0 +1,62 @@
+#lateral{
+     inset: 0;
+    background: rgba(0, 0, 0, .9);
+    opacity: 1;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#interuno{
+    margin-top: 2%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.menu{
+    width: 400px;
+    height: 100%;
+    margin-top: 12%;
+    place-items: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    border: 1px solid;
+    border-color: wheat ;
+}
+
+.titulo{
+    position: absolute;
+    top: 38%;
+    left: 27%;
+    transform: translate(-50%, -50);
+    text-decoration: none;
+}
+
+.titulo span{
+    font-family:"Style Script", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.5rem;
+
+    color: white;
+    background:linear-gradient(to right, #E5C158 50%, #CD7F32 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+
+}
+
+.menu:hover{
+    transform: translateY(-10px)scale(1.052);
+}
+
+.titulo span:hover{
+ background-position: left bottom;
+}
