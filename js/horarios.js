@@ -5,7 +5,14 @@ const hero3 = document.getElementById("hero");
 function mostrarHorarios(){
 
     horarios.classList.toggle("oculto");
-    hero3.classList.add("menu_abierto");
+
+    if(!horarios.classList.contains("oculto")){
+
+        hero3.style.marginTop = "220px";
+
+    }else{
+        hero3.style.marginTop = "190px"
+    }
 }
 
 let estadoActual;

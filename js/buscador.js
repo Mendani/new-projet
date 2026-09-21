@@ -6,5 +6,10 @@ const hero2 = document.getElementById("hero");
 
 function  searchInput(){
     input.classList.toggle("oculto");
-    hero2.classList.toggle("menu_abierto");
+
+    if(!input.classList.contains("oculto")){
+        hero2.style.marginTop = "220px";
+    }else{
+        hero2.style.marginTop = "190px"
+    }
 }

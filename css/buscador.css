@@ -1,6 +1,6 @@
 #search{
     position: absolute;
-    top: 110%;
+    top: 104%;
     left: 40%;
     transform: translate(-50%, -50%);
     animation: aparecer2 .5s ease .5s forwards;

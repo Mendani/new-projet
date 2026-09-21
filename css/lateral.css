@@ -42,7 +42,7 @@
     font-size: 3.5rem;
 
     color: white;
-    background:linear-gradient(to right, #E5C158 50%, #CD7F32 50%);
+    background:linear-gradient(to right, orangered 50%, crimson 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position 0.5s ease-out;

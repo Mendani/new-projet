@@ -13,13 +13,15 @@ function crearNew(menus) {
 
         if(menu.imagen){
             div.style.backgroundImage = `url(${menu.imagen})`;
+            div.style.backgroundPosition = "center center";
+            div.style.backgroundSize = "cover";
         }else{
             div.style.backgroundColor = "transparent";
             div.style.backdropFilter = "blur(15px)";
         }
 
         div.innerHTML= `
-        <a href="" class="titulo">
+        <a href="${menu.enlace}" class="titulo">
             <span>${menu.nombre}</span>
         </a>
         `;

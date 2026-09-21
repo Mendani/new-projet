@@ -1,17 +1,17 @@
 [
     {   
-        "a":"",
+        "enlace":"pages/servicios.html",
         "nombre":"Servicios",
-        "imagen":""
+        "imagen":"img/_.jpeg"
     },
      {
-        "a":"",
+        "enlace":"",
         "nombre":"Estilista",
         "imagen":""
     },
     {
         "a":"",
         "nombre":"Tienda",
-        "imagen":""
+        "imagen":"img/logo.png"
     }
 ]
