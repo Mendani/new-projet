@@ -27,6 +27,12 @@
     border-color: wheat ;
 }
 
+.menu img{
+    max-width: 90%;
+    height: max-content;
+    display: block;
+}
+
 .titulo{
     position: absolute;
     top: 38%;
@@ -49,7 +55,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
+    text-shadow: 0 0 3px black;
 
 }
 

@@ -29,7 +29,7 @@ function Abierto_cerrado(){
 
         estadoActual = "Abierto"
 
-    }else if((dia === 1 || dia === 2 || dia === 3 || dia === 4 || dia === 5) && hora >= 15 && minutos >= 30){
+    }else if((dia === 1 || dia === 2 || dia === 3 || dia === 4 || dia === 5) && hora == 15 && minutos >= 30){
 
         estadoActual = "Abrira pronto"
 

@@ -14,7 +14,7 @@ function crearNew(menus) {
         if(menu.imagen){
             div.style.backgroundImage = `url(${menu.imagen})`;
             div.style.backgroundPosition = "center center";
-            div.style.backgroundSize = "cover";
+            div.style.backgroundSize = "100% 130%";
         }else{
             div.style.backgroundColor = "transparent";
             div.style.backdropFilter = "blur(15px)";
