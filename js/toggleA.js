@@ -6,13 +6,13 @@ const overlay = document.getElementById("overlay");
 
 function mostrarNav(){
     nav.classList.toggle("oculto");
-    heroI.classList.toggle("menu_abierto");
-    overlay.classList.add("active");
+   if(heroI){heroI.classList.toggle("menu_abierto");} 
+    if(overlay){overlay.classList.add("active");}
 };
 
 function cerrar(){
-    heroI.classList.remove("menu_abierto");
-    overlay.classList.remove("active");
+     if(heroI){heroI.classList.remove("menu_abierto");}
+    if(overlay){overlay.classList.remove("active");}
     nav.classList.toggle("oculto")
 
 }

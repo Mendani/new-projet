@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Icons-->
+    <link rel="icon" href="../img/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--css-->
+    <link rel="stylesheet" href="../css/servicios.css">
+   <link rel="stylesheet" href="../css/responsive.css">
+   <link rel="stylesheet" href="../css/horarios.css">
+   <link rel="stylesheet" href="../css/header.css">
+   <link rel="stylesheet" href="../css/horarios.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Rose - Servicios</title>
+</head>
+<body>
+    <section>
+            <div class="overlay" id="scroll">
+            <header id="scroll1">
+                <img src="../img/logo.png" alt="">   
+                <i class="fa-solid fa-cart-shopping" id="carrito"> <span class="counter" id="cart_count">0</span></i>
+                
+
+
+             <i id="nav_btn" class="fa-solid fa-bars" onclick="mostrarNav()"></i>
+
+                <div id="overlay" class="overlay1"></div>
+                <nav id="navBar" class="oculto">
+                <li><a href="">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Reservar Cita</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="#" onclick="mostrarHorarios()">Horarios</a></li>
+                </nav>
+                <i class="fa-solid fa-magnifying-glass" id="Search_btn1" onclick="searchInput()"></i>
+                
+            </header>
+            <input type="search" placeholder="Buscar" id="search" class="oculto">
+        </div>
+        <div id="horarios" class="oculto">
+            <h4>Nuestros horarios de atencion</h4>
+            <p>Lunes a viernes</p>
+            <span>16 => 20 hrs</span>
+            <br>
+            <div id="horas"></div>
+        </div>
+
+        <div id="servicios">
+            <h1>Nuestros Servicios</h1>
+
+            <div id="servicios1"></div>
+        </div>
+    <!--scripts-->
+    <script src="/js/servicios.js"></script>
+   <script src="../js/horarios.js"></script>
+    <script src="../js/toggleA.js"></script>
+    <script src="../js/buscador.js"></script>
+    <script src="../js/scroll.js"></script>
+
+</body>
+</html>

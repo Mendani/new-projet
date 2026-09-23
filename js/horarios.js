@@ -8,10 +8,10 @@ function mostrarHorarios(){
 
     if(!horarios.classList.contains("oculto")){
 
-        hero3.style.marginTop = "220px";
+        if(hero3){hero3.style.marginTop = "220px";}
 
     }else{
-        hero3.style.marginTop = "190px"
+        if(hero3){hero3.style.marginTop = "190px"}
     }
 }
 
@@ -41,19 +41,23 @@ function Abierto_cerrado(){
     switch(estadoActual){
         case "Abierto":
 
-            horas.textContent = "Abierto 🟢"
+            horas.textContent = "Abierto 🟢";
+            horas.style.color = "green"
 
         break;
 
         case "Abrira pronto":
 
             horas.textContent = "Abriremos pronto 🟡"
+            horas.style.color = "yellow"
+
             
         break;
 
         case "Cerrado":
 
             horas.textContent = "Esatmos Cerrado ⛔"
+            horas.style.color = "red"
             
         break;
     }

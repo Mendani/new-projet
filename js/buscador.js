@@ -8,8 +8,8 @@ function  searchInput(){
     input.classList.toggle("oculto");
 
     if(!input.classList.contains("oculto")){
-        hero2.style.marginTop = "220px";
+        if(hero2){hero2.style.marginTop = "220px";}
     }else{
-        hero2.style.marginTop = "190px"
+        if(hero2){hero2.style.marginTop = "190px"}
     }
 }

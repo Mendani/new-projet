@@ -1,0 +1,137 @@
+#servicios{
+   
+    height: 100vh, fit-content;
+    width: 100%;
+    max-width: 90%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    position: relative;
+    top: 600px;
+    left: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 8px black;
+
+}
+
+h1{
+    display: flex;
+    justify-content:center ;  
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+
+#servicios1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    place-items: center;
+
+}
+
+.cards{
+    height: 280px;
+    width: 200px;
+    border: 1px solid;
+    border-radius:5px;
+    box-shadow: 2px 1px 5px ;
+    position: relative;
+    text-align: center;
+}
+
+.btn-add{
+    position: absolute;
+    bottom: 20px;
+    left: 53px;
+    right: 48px;
+    padding: 5px 22px;
+    cursor: pointer;
+
+}
+
+.nombre{
+    position: absolute;
+    inset: 0;
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 2rem;
+
+}
+
+
+/*medias*/
+
+@media (max-width: 768px) {
+
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 8%;
+        padding: 10px;
+    }
+
+    .cards-cortes {
+        width: 170px;
+        height: 250px;
+    }
+
+    .nombre {
+        font-size: 2.2rem;
+    }
+
+    .btn-add {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 110px;
+        padding: 7px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-cortes {
+        width: 200px;
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    #cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 8%;
+        padding: 5px;
+    }
+
+    .cards-cortes {
+        width: 190px;
+        height: 260px;
+    }
+
+    .nombre {
+        font-size: 2.2rem;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    .btn-add {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 105px;
+        padding: 7px;
+        cursor: pointer;
+
+    }
+}
