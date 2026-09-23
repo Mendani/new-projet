@@ -12,14 +12,15 @@ function servicios(servi){
         div.classList.add("cards");
 
         if(servi.imagen){
-            div.style.backgroundImage = `url(${servi.image})`;
+            div.style.backgroundImage = `url(${servi.imagen})`;
             div.style.backgroundPosition = "center";
             div.style.backgroundSize = "100% 100%"
         }else{
-            div.style.backgroundImage = `url(" ../img/logo.png")`;
+            div.style.backgroundImage = `url("../img/logo.png")`;
             div.style.backdropFilter = "blur(3px)";
             div.style.backgroundPosition = "center"
             div.style.backgroundSize = "contain"
+            div.style.zIndex = "0"
         }
 
         div.innerHTML = `

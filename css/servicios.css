@@ -55,9 +55,11 @@ h1{
 .nombre{
     position: absolute;
     inset: 0;
-    margin-left: 15px;
+    left: 50%;
     margin-top: 30px;
     font-size: 2rem;
+    transform: translateX(-50%);
+
 
 }
 
@@ -66,20 +68,24 @@ h1{
 
 @media (max-width: 768px) {
 
-    #cards {
+    #servicios1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        margin-top: 8%;
+        margin-top:150%;
         padding: 10px;
+        padding-top: 0;
     }
 
-    .cards-cortes {
+    .cards {
         width: 170px;
         height: 250px;
     }
 
     .nombre {
         font-size: 2.2rem;
+        left: 45%;
+        transform: translateX(-50%);
+        z-index: 1;
     }
 
     .btn-add {
@@ -94,11 +100,11 @@ h1{
 
 @media (max-width: 400px) {
 
-    #cards {
+    #servicios1 {
         grid-template-columns: 1fr;
     }
 
-    .cards-cortes {
+    .cards{
         width: 200px;
         height: 280px;
     }
@@ -107,22 +113,24 @@ h1{
 
 @media (max-width: 320px) {
 
-    #cards {
+    #servicios1 {
         grid-template-columns: 1fr;
         gap: 15px;
         margin-top: 8%;
         padding: 5px;
     }
-
-    .cards-cortes {
+    
+    .cards {
         width: 190px;
         height: 260px;
     }
 
     .nombre {
-        font-size: 2.2rem;
-        margin-left: 10px;
+        font-size: 1rem;
+        left: 45%;
+        transform: translateX(-50%);
         margin-top: 25px;
+        z-index: 1;
     }
 
     .btn-add {
