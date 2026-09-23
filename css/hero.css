@@ -74,3 +74,27 @@ h3{
 .nuevo.entrar {
   transform: translateX(0);
 }
+
+#redes{
+   position: absolute;
+   z-index: 3000;
+   bottom: 8px;
+   right: 20px;
+}
+
+#redes a{
+   text-decoration: none;
+   color:  black;
+   font-size: 2rem;
+}
+
+#whatsapp i{
+   color: green;
+   filter: drop-shadow(2px 2px 2px black);
+}
+
+#facebook i {
+   color: blue;
+   filter: drop-shadow(2px 2px 2px black);
+   
+}

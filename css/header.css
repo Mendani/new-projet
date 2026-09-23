@@ -57,6 +57,7 @@ header img{
 #carrito{ 
     color: white;
     font-size: 1.4rem;
+    filter: drop-shadow(2px 2px 2px black);
 }
 
 .counter{

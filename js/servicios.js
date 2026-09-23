@@ -12,15 +12,23 @@ function servicios(servi){
         div.classList.add("cards");
 
         if(servi.imagen){
+            
             div.style.backgroundImage = `url(${servi.imagen})`;
             div.style.backgroundPosition = "center";
-            div.style.backgroundSize = "100% 100%"
+            div.style.backgroundSize = "100% 100%";
+            div.style.zIndex = "0"
+            div.style.border = "orangered"
+            div.style.boxShadow  = `2px 3px 5px black`
+
         }else{
+
             div.style.backgroundImage = `url("../img/logo.png")`;
             div.style.backdropFilter = "blur(3px)";
             div.style.backgroundPosition = "center"
             div.style.backgroundSize = "contain"
             div.style.zIndex = "0"
+            div.style.color = "orangered"
+            div.style.boxShadow  = `2px 3px 5px black`
         }
 
         div.innerHTML = `
