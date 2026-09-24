@@ -55,8 +55,9 @@ h1{
     position: absolute;
     inset: 0;
     left: 50%;
-    margin-top: 30px;
-    font-size: 2rem;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.7rem;
     transform: translateX(-50%);
 
 

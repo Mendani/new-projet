@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!--css-->
+    <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../css/servicios.css">
    <link rel="stylesheet" href="../css/responsive.css">
    <link rel="stylesheet" href="../css/horarios.css">
@@ -60,7 +61,27 @@
 
             <div id="servicios1"></div>
         </div>
+
+    </section>
+    <section id="form" class="oculto">
+        <form id="formulario">
+            <h3 class="kurogane">Crear reserva</h3>
+            <input type="text" id="nombre" placeholder="Su nombre por favor">
+            <input type="tel" id="telefono" placeholder="Su contacto">
+            <input type="date" id="fecha">
+            <input type="time"  id="hora">
+            <input type="text"  id="reserva" placeholder="servicios">
+            <div class="botones">
+
+                <button type="button" id="Cancelar"><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" id="Guardar"><i class="fa-solid fa-cart-arrow-down"></i></button>
+
+            </div>
+        </form>
+    </section>
     <!--scripts-->
+    <script src="../js/reserva.js"></script>
+    <script src="../js/formulario.js"></script>
     <script src="../js/servicios.js"></script>
    <script src="../js/horarios.js"></script>
     <script src="../js/toggleA.js"></script>

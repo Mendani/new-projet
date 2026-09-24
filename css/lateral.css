@@ -47,16 +47,14 @@
     font-style: italic;
     font-size: 3.5rem;
 
-    color: white;
-    background:linear-gradient(to right, orangered 50%, crimson 50%);
+    color: rgb(216, 212, 212);
+    background:linear-gradient(to right, rgb(223, 61, 2) 50%, rgb(224, 0, 45) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position 0.5s ease-out;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 3px black;
-
 }
 
 .menu:hover{
