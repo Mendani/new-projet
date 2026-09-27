@@ -34,7 +34,6 @@ body {
     header img {
         width: 90px;
         max-width: 90px;
-        height: auto;
         top: 45px;
     }
 
@@ -463,8 +462,8 @@ body {
     }
 
     header img {
-        width: 72px;
-        max-width: 72px;
+        width: 100%;
+        max-width: 90px;
         top: 40px;
     }
 
@@ -639,7 +638,9 @@ body {
    ========================================================= */
 
 @media screen and (max-width: 320px) {
-
+    header img{
+        min-width: 78px;
+    }
     #hero {
         height: 315px;
     }
